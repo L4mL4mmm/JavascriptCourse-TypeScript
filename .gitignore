@@ -1,1 +1,19 @@
-/node_modules
+# Tránh đẩy thư mục thư viện bên thứ ba
+node_modules/
+
+# Tránh đẩy các file JavaScript tự động biên dịch từ TypeScript ở thư mục gốc
+main.js
+main.js.map
+main.d.ts
+main.d.ts.map
+
+# Tránh đẩy các file JavaScript tự động sinh ra trong các folder bài tập
+Bai*/*.js
+Bai*/*.js.map
+Bai*/*.d.ts
+
+# File log hoặc hệ thống thừa
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
