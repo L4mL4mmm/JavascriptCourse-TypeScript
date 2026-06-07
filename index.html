@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Employee Manager</title>
+    </head>
+    <body>
+        <h1>Employee Manager</h1>
+
+        <form id="employeeForm">
+            <div>
+                <label>ID</label>
+                <input type="number" name="id" id="employeeId" required />
+            </div>
+
+            <div>
+                <label>Name</label>
+                <input type="text" name="name" id="employeeName" required />
+            </div>
+
+            <div>
+                <label>Age</label>
+                <input type="number" name="age" id="employeeAge" required />
+            </div>
+
+            <div>
+                <label>Gender</label>
+                <select name="gender" id="employeeGender" required>
+                    <option value="">-- Chọn giới tính --</option>
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                    <option value="other">Khác</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submitBtn">Thêm Employee</button>
+            <button type="button" id="cancelEditBtn" hidden>Hủy sửa</button>
+        </form>
+
+        <hr />
+
+        <button id="printBtn">Print List Employee</button>
+
+        <h2>Danh sách Employees</h2>
+
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="employeeList"></tbody>
+        </table>
+
+        <script src="./main.js"></script>
+    </body>
+</html>

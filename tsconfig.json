@@ -1,0 +1,36 @@
+{
+    // Visit https://aka.ms/tsconfig to read more about this file
+    "compilerOptions": {
+        // Environment Settings
+        "target": "es6",
+        "types": [],
+
+        // Other Outputs
+        "sourceMap": false,
+        "declaration": false,
+        "declarationMap": false,
+
+        // Stricter Typechecking Options
+        "noUncheckedIndexedAccess": false,
+        "exactOptionalPropertyTypes": false,
+
+        // Recommended Options
+        "strict": true,                         /* BẬT chế độ nghiêm ngặt để check lỗi OOP cực chuẩn */
+        "jsx": "react-jsx",
+        "verbatimModuleSyntax": false,
+        "isolatedModules": false,
+        "noUncheckedSideEffectImports": false,
+        "moduleDetection": "auto",
+        "skipLibCheck": false,
+        "ignoreDeprecations": "6.0"
+    },
+    // Quét toàn bộ các thư mục bài tập từ gốc
+    "include": [
+        "Bai5/**/*",
+        "Bai6/**/*",
+        "Bai7/**/*",
+        "Bai8/**/*",
+        "Bai9/**/*",
+        "Bai10/**/*"
+    ]
+}

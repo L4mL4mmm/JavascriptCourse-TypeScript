@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Build (tsc) and Launch JS",
+            "program": "${workspaceFolder}/y",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "tsc: build",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}
